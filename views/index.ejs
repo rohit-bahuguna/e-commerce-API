@@ -19,8 +19,12 @@
             padding: 0vw 3vw 0vw  3vw;
         }
         .header {
-           background-color: #fff;
-            height: 10vh;
+            display: flex;
+            flex-direction: row;
+           justify-content: space-around;
+           align-items: center;
+           background-color: rgb(25, 209, 199);
+            height: 9vh;
             width: 56vw;
            
 
@@ -51,6 +55,7 @@
             padding: 10px;
             margin-right: 2vw;
             border-radius: 5px;
+            font-size: 25px;
            
         }
 
@@ -75,7 +80,7 @@
 
         p span {
             color:rgb(246, 24, 20);
-            font-size: large;
+            font-size: 25px;
         }
         .third {
             height: 10vh;
@@ -84,20 +89,34 @@
             color: rgb(199, 6, 6);
             
         }
-        h1 {
-            background-color: rgb(25, 209, 199);
+        .name , .check {
+           background-color: white;
             padding: 5px;
-           
             margin: 0%;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
         }
+        .name:hover ,
+         .check:hover {
+            background-color: black;
+            color: white;
+         }
     </style>
 </head>
 <body>
    
     <header class="header">
-            <h1>
+            <h1 class="name">
                 E-Commerce API  
             </h1>
+            <a
+href="https://github.com/rohit-bahuguna/e-commerce-API"
+target="#"
+class="check"
+>
+<h2 class="check">CheckOut To Use</h2></a
+>
     </header>
     <section class="first">
         <p class="about">
