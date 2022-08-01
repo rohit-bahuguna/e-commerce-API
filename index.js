@@ -7,15 +7,21 @@ const { default: mongoose } = require('mongoose');
 const dotenv = require('dotenv');
 
 dotenv.config();
+app.set('view engin' , 'ejs');
 app.use(express.json());
 app.use(cors())
+app.use('/product' , productRoute) ;
 
+// app.get("/",  (req, res) => {
+//   res.send("app is runing ");
+// });
 
-app.get("/",  (req, res) => {
-  res.send("app is runing ");
+app.get("/", (req, res) => {
+     
+  // data will come from model --> database
+  res.render("index.ejs");
 });
 
-app.use('/product' , productRoute) ;
 
 
 app.get("*", (req, res) => {
