@@ -24,7 +24,7 @@ router.get('/:id' , async (req ,res) => {
     try{
     const tempId = req.params.id;
      const response = await Product.findOne({'id':tempId});
-     // console.log(response);
+     console.log(response);
      res.status(200).json(response);
 
     }
@@ -56,6 +56,7 @@ router.put('/' , async (req , res)=> {
 
     try {
        // console.log(req.body);
+        console.log(req.body.id)
         const tempid = req.body.id;
         const response = await Product.findOneAndUpdate({'id': tempid} , req.body , {new : true});
         res.status(200).json(response);
