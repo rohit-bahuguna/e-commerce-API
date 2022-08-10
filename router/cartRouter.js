@@ -7,7 +7,9 @@ const auth = require('../middleware/auth')
 cartRouter.post('/addtocart' , auth , addToCart ) //Create --> POST
 cartRouter.get('/getallcart' , auth , getAllCart) // Read all --> GET
 cartRouter.get('/getonecart' , auth , getOneCart) // Read one --> GET
-cartRouter.delete('/deletefromcart/:id' , auth ,  deleteFromCart)  // Delete ---> POST
+cartRouter.delete('/deletefromcart/:id' ,   deleteFromCart)  // Delete ---> POST
 cartRouter.put('/updatecart/:id' , auth , UpdateCart)  // Delete ---> POST
 
 module.exports = cartRouter;
+
+
