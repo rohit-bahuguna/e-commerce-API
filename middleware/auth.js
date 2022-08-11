@@ -1,13 +1,17 @@
 const jwt = require('jsonwebtoken');
-
+const dotenv = require('dotenv')
+dotenv.config();
 const auth = (req , res , next) => {
 
 
     try {
         let token = req.headers.authorization;
+
+      //  console.log(req.headers)
+      console.log(token);
         if(token){
-            token = token.split(" ")[1];
-            let user = jwt.verify(token , "newtonschool");
+           // token = token.split(" ")[1];
+            let user = jwt.verify(token , process.env.SECRET_KEY);
             req.userId = user.id;
 
         }

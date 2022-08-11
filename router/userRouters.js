@@ -5,5 +5,6 @@ const userRouter = express.Router();
 
 userRouter.post('/singup' , singUp);
 userRouter.post('/singin' , singIn);
+//userRouter.post('/' , singIn);
 
 module.exports = userRouter;

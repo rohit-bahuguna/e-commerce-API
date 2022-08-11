@@ -1,9 +1,10 @@
 const cartModal = require("../model/cart");
-const productModal = require("../model/product");
+
+require('dotenv').config();
 
 const addToCart = async (req, res) => {
   try {
-    // console.log(typeof(req.userId));
+    // console.log(req.userId);
 
     const tempProduct = new cartModal({
       userid: req.userId,
@@ -25,12 +26,15 @@ const addToCart = async (req, res) => {
     res.status(400).json({ massage: error.massage });
   }
 };
+
 const getAllCart = async (req, res) => {
   try {
-    // console.log(req.userId)
+     console.log(req.userId)
     const id = req.userId;
+
     const cartItems = await cartModal.find({ userid: id });
     res.status(200).json(cartItems);
+   // console.log(cartItems)
   } catch (error) {
     console.log(error);
     res.status(400).json({ massage: error.massage });
