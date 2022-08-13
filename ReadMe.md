@@ -2,9 +2,8 @@
 <h3 align="center">by Rohit Bahuguna </h3>
 <h4 align="center"><a href="https://ecommerceapibyrohitbahuguna.herokuapp.com"> ➤ Check it out</a></h4>
 
-
-                                                                      USER
-
+     <h4a lign="center">USER</h4>
+                                                                      
 
 USER SINGUP  ==> POST
           https://ecommerceapibyrohitbahuguna.herokuapp.com/user/singup
@@ -13,7 +12,7 @@ USER SINGUP  ==> POST
           https://ecommerceapibyrohitbahuguna.herokuapp.com/user/singin
 
 
-                                                                      PRODUCT
+                                               <h4a lign="center">PRODUCT</h4>                        
 
  
 GET ALL PRODUCT ==> GET
@@ -31,7 +30,7 @@ DELETE A PRODUCT BY ID ==> DELETE
             https://ecommerceapibyrohitbahuguna.herokuapp.com/product/ID
 
    
-                                                                          CART
+                                                              <h4a lign="center">CART</h4>              
                                
 NEED AUTHENTICATION TO ACCESS
                                 
