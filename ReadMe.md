@@ -3,7 +3,7 @@
 <h4 align="center"><a href="https://ecommerceapibyrohitbahuguna.herokuapp.com"> ➤ Check it out</a></h4>
 
 
- USER
+                                                                      USER
 
 
 USER SINGUP  ==> POST
@@ -13,7 +13,7 @@ USER SINGUP  ==> POST
 https://ecommerceapibyrohitbahuguna.herokuapp.com/user/singin
 
 
-PRODUCT
+                                                                      PRODUCT
 
  
 GET ALL PRODUCT ==> GET
@@ -31,7 +31,7 @@ DELETE A PRODUCT BY ID ==> DELETE
 https://ecommerceapibyrohitbahuguna.herokuapp.com/product/ID
 
    
-CART
+                                                                          CART
                                
 NEED AUTHENTICATION TO ACCESS
                                 
